@@ -1,0 +1,2164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    height: 100%;
+}
+a,
+img,
+span {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 0px;
+}
+img {
+    line-height: 0px;
+    max-width: 100%;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 15px auto 15px;
+}
+.alignleft {
+    float: left;
+    margin: 15px 15px 15px 0;
+}
+.alignright {
+    float: right;
+    margin: 15px 0 15px 15px;
+}
+ul li {
+    display: list-item;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/*.row {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+*/
+.pullLeft {
+    float: left;
+}
+
+.pullRight {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-0{
+    margin-top: 0 !important;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.pb-0{
+    padding-bottom: 0 !important;
+}
+.border-bottom-0{
+    border-bottom: 0 !important;
+}
+.border-right-0{
+    border-right: 0 !important;
+}
+
+.layout {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+section {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+section.spfullBanner {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: auto;
+}
+
+.spSiteBanner {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*background-image: url("../images/banner-img.jpg");
+    background-size: cover;
+    background-position: center;*/
+    height: auto;
+    /*background-repeat: no-repeat;*/
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    background: url("../images/header-fade-bg.png") repeat-x 0 -20px;
+    margin: 0px 0px 20px;
+    padding: 15px 0px;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 10;
+}
+
+header .logo {
+    width: auto;
+    float: left;
+    margin: 0px;
+    padding: 0px 15px;
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 70px;
+    width: auto;
+}
+
+header .navigation {
+    width: auto;
+    float: right;
+    margin: 0px;
+    padding: 10px 15px 0px;
+}
+
+header .navigation ul {
+    width: auto;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+header .navigation ul li {
+    float: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+header .navigation ul li a {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.sp-property-footer{
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}
+
+
+/* Mobile navigation */
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+}
+.scrollNext {
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-name: hvr-icon-down;
+    animation-name: hvr-icon-down;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.slider-title h1{
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    z-index: 10;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: bold;
+    opacity: 0.75;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.sp-horizontal .sp-arrows{
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    height: 100% !important;
+}
+.sp-horizontal .sp-arrow{
+    top: 0 !important;
+    bottom: 0 !important ;
+    z-index: 1 !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-align: center !important;
+    align-items: center !important ;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    width: 15% !important;
+    cursor: pointer !important;
+    height: 100% !important;
+}
+.sp-horizontal .sp-next-arrow:after,
+.sp-horizontal .sp-next-arrow:before,
+.sp-horizontal .sp-previous-arrow:after,
+.sp-horizontal .sp-previous-arrow:before{
+    width: 15px !important;
+    height: 30px !important;
+    top: 50% !important;
+}
+.sp-horizontal .sp-arrow:before{
+    margin-top: -30px;
+}
+.sp-horizontal .sp-previous-arrow{
+    right: auto !important;
+    left: 0px !important;
+}
+.sp-horizontal .sp-next-arrow{
+    right: 0px !important;
+    left: auto;
+}
+
+@-webkit-keyframes hvr-icon-down {
+    0%,
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    25%,
+    75% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+@keyframes hvr-icon-down {
+    0%,
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    25%,
+    75% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+.scrollNext a i {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    border: 1px solid #fff;
+    padding: 10px;
+    height: 34px;
+    line-height: 16px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.scrollNext a:hover i{
+    background: #fff;
+    color: #000;
+}
+section.spPropertyDetails {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px 0px;
+    overflow: hidden;
+}
+
+section.spPropertyDetails .col-12 {
+    width: 100%;
+    float: left;
+    padding: 0px;
+}
+section.spPropertyDetails .col-9 {
+    width: 65%;
+    float: left;
+    padding: 0px 20px 0px 0px;
+    border-right: 1px solid #ddd;
+}
+
+section.spPropertyDetails .col-3 {
+    width: 35%;
+    float: right;
+}
+section.spPropertyDetails .col-6 {
+    width: 50%;
+    float: left;
+}
+.formCol6{
+    width: 48%;
+    float: left;
+    margin: 0 1%;
+}
+
+section.spPropertyDetails .propertyTop {
+    width: 100%;
+    float: left;
+    padding: 20px 0px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+section.spPropertyDetails .propertyTop h2 {
+    width: 100%;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    color: #333;
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+section.spPropertyDetails .propertyTop p {
+    width: 100%;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    color: #888;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+section.spPropertyDetails .propertyTop p span {
+    color: #ccc;
+    padding: 0 10px;
+}
+section.spPropertyDetails .propertyContent {
+    width: 100%;
+    float: left;
+    padding: 0px 0px 50px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+section.spPropertyDetails .propertyContent h3 {
+    font-size: 18px;
+    margin: 0px 0px 15px;
+    padding: 35px 0px 0px;
+    letter-spacing: 1px;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+}
+section.spPropertyDetails .propertyContent p {
+    margin: 0px 0px 10px;
+    padding: 0px;
+    color: #555;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+section.spPropertyDetails .propertyContent .propertyRight {
+    width: 100%;
+    margin: -106px 0px 0px;
+    padding: 0px;
+    position: relative;
+    z-index: 3;
+}
+section.spPropertyDetails .propertyTop p .btnLinktoMap{
+    visibility: hidden;
+    font-size: 14px;
+    color: #333;
+    vertical-align: top;
+    line-height: 18px;
+    margin: 0 0 0 10px;
+}
+section.spPropertyDetails .propertyTop p:hover .btnLinktoMap{
+    visibility: visible;
+}
+.spPromoTextContainer{
+    background: #FFFC9E;
+    width: 100%;
+    float: left;
+    padding: 25px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.spPromoTextContainer .sp_promot_text{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+section.spPropertyDetails .propertyContent .propertyPrice,
+section.spPropertyDetails .propertySummary .propertyPrice{
+    width: 100%;
+    margin: 0px;
+    padding: 0px 0px 11px;
+    color: #444;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+section.spPropertyDetails .propertyContent .groupPropertyDetailsRight{
+    font-size: 14px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    background: #fff;
+    min-height: 136px;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.groupPropertyDetailsRight .propertyDetailsRow,
+section.spPropertyDetails .propertySummary .propertyDetailsRow{
+    width: 100%;
+    float: left;
+    margin: 0px 0px 10px;
+    padding: 0px;
+}
+.groupPropertyDetailsRight .propertyDetailsRow:last-child,
+section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .propertyDetailsRow:last-child{
+    margin: 0px !important;
+}
+section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .propertyDetailsRow .fieldLeft,
+section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .propertyDetailsRow .fieldLeft{
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    float: left;
+    width: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .propertyDetailsRow .fieldLeft i,
+section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .propertyDetailsRow .fieldLeft i{
+    margin-right: 5px;
+    width: 22px;
+    text-align: center;
+}
+
+section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .propertyDetailsRow .fieldRight,
+section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .propertyDetailsRow .fieldRight {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    float: left;
+    width: 50%;
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px
+}
+section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .propertyDetailsRow .fieldFullCol,
+section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .propertyDetailsRow .fieldFullCol {
+    color: #444;
+    float: left;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .ctaContainer {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .ctaContainer a,
+section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .ctaContainer a {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background: #333;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+section.spPropertyDetails .propertyContent .propertyPresented {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    border-left: 0px solid #ddd;
+    border-right: 0px solid #ddd;
+    border-bottom: 0px solid #ddd;
+}
+
+section.spPropertyDetails .propertyContent .propertyPresented h3 {
+    padding: 10px 15px;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 16px;
+}
+section.spPropertyDetails .propertySummary{
+    position: relative;
+    padding-left: 20px;
+}
+section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .ctaContainer {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.propertyAgent {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #ddd;
+}
+.propertyAgent .agentImg {
+    width: 35%;
+    float: left;
+    margin-right: 10px;
+    padding: 10px 0px 10px 10px;
+}
+.propertyAgent .agentImg img {
+    width: 80%;
+    height: auto;
+    max-width: 140px;
+}
+.propertyAgent .agentInfo {
+    width: 60%;
+    float: left;
+    margin: 0px;
+    padding: 20px 0px 10px 15px;
+}
+.propertyAgent .agentInfo h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0px 0px 5px;
+    padding: 0px;
+}
+.propertyAgent .agentInfo p {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0px;
+}
+.propertyAgent .agentInfo p a {
+    text-decoration: none;
+    color: #444;
+    line-height: 28px;
+    /*    overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;*/
+}
+.propertyAgent .agentInfo p .sp_agent_email{
+    line-height: 20px;
+}
+.getInTouch {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0px solid #ddd;
+    background: #fff;
+}
+.getInTouch h5 {
+    width: 100%;
+    /*float: left;*/
+    font-size: 16px;
+    margin: 0px 0px;
+    padding: 10px 15px;
+    color: #555;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+.getInTouch form {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 10px 7px 20px;
+}
+.getInTouch form input[type="text"],
+.getInTouch form input[type="tel"],
+.getInTouch form input[type="email"],
+.getInTouch form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #555;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    margin: 10px 0px 0px 0px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.getInTouch form textarea {
+    height: 115px;
+    resize: none;
+}
+.getInTouch form button {
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px;
+    color: #FFF;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background: #333;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out;
+    cursor: pointer;
+    margin: 10px 0 0;
+}
+.getInTouch form button:hover {
+    background: #ddd;
+    border-color: #ddd;
+    color: #333;
+}
+.getInTouch .sp-formid-error{
+    color: red !important;
+    padding: 10px 15px !important;
+}
+.getInTouch #btnContainer {
+    display: inline-block;
+    width: 100%;
+}
+#btnContainer span.error{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: red;
+}
+#btnContainer span.success{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: green;
+    line-height: 14px;
+}
+#sp_captcha_code_container{
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+.sp_captcha_img, .sp_captcha_field{
+    float: left;
+    width: 50%;
+}
+.shp_captcha_img img{
+    max-width: 100%;
+}
+.sp_captcha_field input[type="text"]{
+    margin-bottom: 0 !important;
+}
+.sp-error {
+    color: red;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    line-height: 26px;
+}
+.map {
+    width: 100%;
+    float: left;
+    margin: 0px 0px;
+    padding: 0px;
+    background: #fff;
+}
+.directionRow{
+    width: 100%;
+    float: left;
+    margin: 0px 0px;
+    padding: 30px 0px 20px;
+}
+.directionRow h3 {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    margin: 0px 0px 30px;
+    padding:0px;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+.directionRow form{
+    max-width: 60%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.directionRow form input[type="text"]{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #555;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 190px 10px 12px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.directionRow form button, .sp_btn {
+    outline: none;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: none;
+    border-radius: 0px 3px 3px 0px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 9px 10px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background: #333;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.directionRow form button:hover, .sp_btn:hover {
+    background: #e5e5e5;
+    color: #333;
+    border-top: 1px solid #e5e5e5;
+    border-right: 1px solid #E5E5E5;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: none;
+}
+.printFlyerRow{
+    max-width: 100%;
+    width: 100%;
+    float: left;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.btnPrintFlyer{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background: #333;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+.btnPrintFlyer:hover {
+    background: #e5e5e5;
+    color: #333;
+}
+.map iframe, #map_canvas {
+    width: 100%;
+    height: 420px;
+    display: block;
+}
+.btn-Schedule{
+    padding: 8px 15px;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out;
+    border: 1px solid #fff;
+}
+.btn-Schedule i{
+    margin-right: 5px;
+}
+.btn-Schedule:hover{
+    color: #333;
+    background: #fff;
+}
+.amenitiesContainer{
+    margin: 40px 0;
+}
+.amenitiesContainer fieldset{
+    border: 1px solid #333;
+}
+.amenitiesContainer legend{
+    margin: 0 auto;
+    padding: 0 25px;
+    color: #444;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.amenitiesContainer ul{
+    margin: 0;
+    padding: 10px 15px 15px;
+    list-style: none;
+}
+.amenitiesContainer ul li{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.amenitiesContainer ul li a{
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+}
+.amenitiesContainer ul li a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.amenitiesContainer ul li a:before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: 600;
+}
+.amenitiesTags{
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.amenitiesTags ul{
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.amenitiesTags ul li{
+    width: auto;
+    float: left;
+    margin: 0px 10px 10px 0px;
+    padding: 0px;
+    list-style: none;
+}
+.amenitiesTags ul li a{
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 0.25em;
+    color: #333;
+    background: #e3f0ff;
+    padding:5px 7px;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    transition: all 0.55s ease-in-out;
+    text-transform: capitalize;
+}
+.amenitiesTags ul li a:hover{
+    background-color: #90a0b0;
+    text-decoration: none;
+    color: #fff !important;
+}
+.amenitiesTags ul li a:before{
+    content: "#";
+}
+
+
+/* top slider */
+.swiper-slide {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    float: left;
+    transition: opacity 0.6s ease, -webkit-transform 0.3s ease;
+    transition: opacity 0.6s ease, transform 0.3s ease;
+    transition: opacity 0.6s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.swiper-container.nav-slider {
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+}
+.swiper-container.nav-slider .swiper-slide {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+    float: left;
+}
+.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+.swiper-container.nav-slider .swiper-slide .content {
+    width: 100%;
+}
+.swiper-container.nav-slider .swiper-slide .content .title {
+    font-size: 20px;
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+.swiper-container.loading {
+    opacity: 0;
+    visibility: hidden;
+}
+.swiper-slide {
+    overflow: hidden;
+}
+.swiper-slide .slide-bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide .entity-img {
+    display: none;
+}
+.swiper-slide .content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 50%;
+    padding-left: 5%;
+    color: #fff;
+}
+.swiper-slide .content .title {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.swiper-slide .content .caption {
+    display: block;
+    font-size: 13px;
+    line-height: 1.4;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+    transition: opacity 0.3s ease, -webkit-transform 0.7s ease;
+    transition: opacity 0.3s ease, transform 0.7s ease;
+    transition: opacity 0.3s ease, transform 0.7s ease, -webkit-transform 0.7s ease;
+}
+.swiper-slide .content .caption.show {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+[class^="swiper-button-"] {
+    width: 44px;
+    opacity: 0;
+    visibility: hidden;
+}
+.swiper-button-prev {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+}
+.swiper-button-next {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+}
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.socialSharing{
+    padding: 40px 0px 20px;
+    text-align: center;
+}
+.socialSharing a{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    text-align: center;
+    border:1px solid #333;
+    color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all .6s;
+}
+.socialSharing a:hover{
+    color: #999;
+    background: #f5f5f5;
+    border:1px solid #e1e1e1;
+}
+.socialSharing .spBtnCopy i{
+    display: block;
+    line-height: 34px;
+}
+#spSlider .sp-selected-thumbnail {
+    border: 4px solid #000;
+}
+/*--- Top Footer ---*/
+.ftTopBar{
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 15px;
+    background: #333;
+    font-size: 12px;
+    line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    font-weight: 400;
+    border-top: 1px solid #f5f5f5;
+}
+.copyRight{
+    width: 25%;
+    float: left;
+}
+.userFullLinks{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.userFullLinks a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    font-weight: 400;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+.userFullLinks a:hover{
+    color: #fff;
+}
+.providerRight{
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+.providerRight img{
+    width: 30px;
+    height: auto;
+    display: inline-block;
+    margin: 0px  10px 0px 0px;
+}
+
+.single-property-corner-tag {
+    position: absolute;
+    right: -100px;
+    top: 100px;
+    transform: rotate(40deg);
+    margin: 0;
+    width: 470px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 1px solid rgba(0,0,0,.3);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.single-property-corner-tag.sold{
+    background: #ff0000;
+}
+.single-property-corner-tag.pending{
+    background: #ff6600;
+}
+#FrmGetInTouch #email2{
+    display: none;
+}
+.sp_no_slider, .sp_single_slide .sp-slides{
+    max-height: 700px;
+}
+.propertyContent .sp-edit-post{
+    margin-top: 15px !important;
+    display: inline-block;
+    clear: both;
+}
+
+/*Swift Chat*/
+/* Cookies notice */
+.swiftCloudThemeChat{
+    z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.swiftCloudThemeChat .swiftCloudThemeChatLuncher{
+    background: #196abc;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 26px;
+    line-height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(0, 0, 0, 0.16) 0px 2px 32px 0px;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.swiftCloudThemeChat .swiftCloudThemeChatLuncher:hover,
+.swiftCloudThemeChat .swiftCloudThemeChatLuncher:focus,
+.swiftCloudThemeChat .swiftCloudThemeChatLuncher:active{
+    background: #005dbb;
+}
+.swiftCloudThemeChatContainerBox{
+    z-index: 2;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    content: '';
+    pointer-events: none;
+    background: radial-gradient(ellipse at bottom right,rgba(29,39,54,.16) 0%,rgba(29,39,54,0) 72%);
+}
+.swiftCloudThemeChatConversion{
+    z-index: 3;
+    position: fixed!important;
+    bottom: 35px;
+    right: 20px;
+    width: 360px;
+    /*overflow-y: auto;*/
+    max-height: calc(100% - 90px);
+    height: auto;
+}
+.swiftCloudThemeChatConversionParts{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+/*Team Chat*/
+.swiftTeamChat{
+    position: relative;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    border-bottom-left-radius: 0;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    clear: both;
+    width: calc(100% - 45px);
+}
+.swiftTeamChat:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 13px 5px;
+    border-color: transparent transparent #fff;
+}
+.swiftTeamChat .sTeamAvtar{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    border-radius: 100%;
+}
+.swiftTeamChat .sTeamAvtar img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.swiftTeamChat .sTeamMsg{
+    padding: 20px;
+    position: relative;
+}
+.swiftTeamChat .sTeamMsg .msgContant p,
+.swiftTeamChat .sTeamMsg .msgContent p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333;
+    margin: 0px 0px 10px 0px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.swiftTeamChat .sTeamMsg .msgContant p:last-child,
+.swiftTeamChat .sTeamMsg .msgContent p:last-child{
+    margin: 0px;
+}
+.swiftTeamChat .timeRow{
+    white-space: nowrap;
+    clear: both;
+    color: #737376;
+    font-size: 10px;
+    padding: 0;
+    margin-top: 6px;
+}
+.swiftCloudThemeChatConversion h2 {
+    font-size: 20px;
+}
+.btnConfirmMultiCheckbox{
+    display: block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    font-family: inherit;
+}
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.preText .btnDecline{
+    margin-left: 7px;
+}
+/*Schedule a Demo*/
+.swiftChat{
+    z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.chatWebFromBox{
+    z-index: 2;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    content: '';
+    pointer-events: none;
+    background: radial-gradient(ellipse at bottom right,rgba(29,39,54,.16) 0%,rgba(29,39,54,0) 72%);
+}
+.swiftChatConversion{
+    z-index: 3;
+    position: fixed!important;
+    bottom: 40px;
+    right: 20px;
+    width: 360px;
+    overflow-y: auto;
+    max-height: calc(100% - 90px);
+    height: auto;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.swiftChatConversionParts{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+/*Team Chat*/
+.swiftTeamChat{
+    position: relative;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    border-bottom-left-radius: 0;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    clear: both;
+    width: calc(100% - 45px);
+}
+.swiftTeamChat:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 13px 5px;
+    border-color: transparent transparent #fff;
+}
+.swiftTeamChat .sTeamAvtar{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    border-radius: 100%;
+}
+.swiftTeamChat .sTeamAvtar img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.swiftTeamChat .sTeamMsg{
+    padding: 20px;
+}
+.swiftTeamChat .timeRow{
+    white-space: nowrap;
+    clear: both;
+    color: #737376;
+    font-size: 10px;
+    padding: 0;
+    margin-top: 6px;
+}
+/*User Chat*/
+.userChat{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #196abc;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    box-shadow: 0 2px 8px 0 rgba(35,47,53,.09);
+    border-radius: 4px;
+    float: right;
+    width: calc(100% - 45px);
+    clear: both;
+    margin: 0px 0px 15px 0px;
+}
+.userChat .userMsg{
+    padding: 20px;
+}
+.userChat .userMsg .msgContant p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+    margin: 0px 0px 10px 0px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.userChat .userMsg .msgContant p:last-child {
+    margin: 0px;
+}
+.userChat .timeRow{
+    white-space: nowrap;
+    color: #fff;
+    opacity: .7;
+    width: auto;
+    clear: both;
+    font-size: 10px;
+    padding: 0;
+    margin-top: 6px;
+}
+.swiftChatClose {
+    position: absolute;
+    top: 0px;
+    right:0px;
+    z-index: 10;
+    opacity: 0;
+}
+.swiftChatClose  a{
+    display: inline-block;
+    border-radius: 50%;
+    background: #333 !important;
+    color: #fff !important;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+}
+.swiftChatConversion:hover .swiftChatClose {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+/* Swift Chat Replay Box */
+.swiftChatReplayBox{
+    position: relative;
+    float: right;
+    clear: both;
+    width: calc(100% - 45px);
+}
+.swiftChatReplayBox .textareaPaperclip{
+    position: absolute;
+    right: 55px;
+    top: 13px;
+}
+.swiftChatReplayBox .textareaPaperclip a{
+    color: #737376;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.swiftChatReplayBox .msgSend{
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+.swiftChatReplayBox .msgSend .sendBtn{
+    background: none;
+    color: #196abc;
+    margin: 0px;
+    padding: 0;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.swiftChatReplayBox .msgSend .sendBtn:hover{
+    color: #005dbb;
+}
+.swiftChatReplayBox textarea{
+    font-family: inherit;
+    color: #333;
+    resize: none;
+    border: 0;
+    padding: 15px 50px 15px 20px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #fff;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    cursor: text;
+    height: 50px;
+    border-radius: 4px;
+}
+.swiftChatReplayBox textarea:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btnGroupActions .btn{
+    margin: 0px 2px 5px;
+}
+.swiftChatConversion h2 {
+    font-size: 20px;
+}
+.chatbot_form_msg{
+    resize: none;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    height: 75px;
+}
+.chatbot_form_sendBtn{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    font-size: 18px;
+    color: #196abc;
+}
+.chatbot_form_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #333;
+    color: #FFF;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 24px;
+    z-index: 5;
+}
+.chatbot_form_close a, .chatbot_form_close a:hover, .chatbot_form_close a:active{
+    color: #FFF;
+}
+.swift-chat-luncher {
+    background: #196abc none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+}
+.swift-chat-luncher i {
+    font-size: 34px;
+    color: #fff;
+}
+.display-none{
+    display: none;
+}
+.pos-relative {
+    position: relative;
+}
+.chatClose {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    z-index: 10;
+    opacity: 0;
+}
+.chatClose a {
+    display: inline-block;
+    border-radius: 50%;
+    background: #333;
+    color: #fff !important;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+}
+.askQuestionMainContainer:hover .chatClose{
+    opacity: 1;
+    color: #fff !important;
+    transition: all 0.3s ease-in;
+}
+input.labelauty + label{
+    position: relative;
+    padding: 4px 10px 4px 24px !important;
+}
+.labelauty-checked:before{
+    content:"\f00c";
+    position: absolute;
+    font-size: 14px;
+    font-family: Font Awesome\ 5 Free;
+    background: transparent;
+    color: #28a745;
+    overflow: hidden;
+    line-height: 24px;
+    text-align: center;
+    left: 6px;
+    top: 3px;
+}
+.labelauty-unchecked:before{
+    content:"\f0c8";
+    position: absolute;
+    font-size: 14px;
+    font-family: Font Awesome\ 5 Free;
+    background: transparent;
+    color: #ddd;
+    overflow: hidden;
+    line-height: 24px;
+    text-align: center;
+    left: 6px;
+    top: 4px;
+}
+
+.chatError{
+    position: absolute;
+    bottom: 15px;
+    font-size: 12px;
+    color: red;
+    padding-left: 20px;
+    z-index: 9999;
+    left: 0;
+}
+input.labelauty + label > span.labelauty-unchecked,
+input.labelauty + label > span.labelauty-checked{
+    line-height: 22px !important;
+    font-weight: 700 !important;
+}
+input.labelauty + label{
+    margin-bottom: 5px !important;
+}
+.swiftTeamChat .sTeamMsg .msgContent p .btnChatClose {
+    margin-top: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.swiftTeamChat .sTeamMsg .msgContent p .btnChatClose:hover,
+.swiftTeamChat .sTeamMsg .msgContent p .btnChatClose:active,
+.swiftTeamChat .sTeamMsg .msgContent p .btnChatClose:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    text-decoration: none;
+}
+.sp_agent_email_mobile{
+    display: none;
+}
+.scheduleVisitContainer{
+    padding: 0 !important;
+}
+.scheduleVisitContainer .getInTouch h5, .scheduleVisitContainer .propertyPresented h3{
+    font-weight: 600 !important;
+    padding: 15px !important;
+}
+.propertyYTContainer, .propertyVirtual3DContainer{
+    float: left;
+    width: 100%;
+}
+.sp-YT-video-background {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+.sp-YT-video-background iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.propertyVirtual3DTitle, .propertyDocumentTitle{
+    color: #444;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 50px 0 10px;
+}
+.propertyDocumentContainer{
+    float: left;
+    width: 100%;
+    background: #f5f5f5;
+    padding: 0 0 50px;
+}
+.propertyDocumentContainer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.propertyDocumentContainer ul li{
+    width: 33.333333%;
+    display: inline-block;
+    margin: 5px 0;
+}
+.propertyDocumentContainer ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+.propertyDocumentContainer ul li a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+#sp_qrcode{
+    display: inline-block;
+    margin: 25px 0 0;
+}
+
+@media (max-width:1169px) {
+    .layout{
+        max-width:1020px;
+    }
+    .scrollNext {
+        bottom: 100px;
+    }
+}
+@media (max-width:1023px) {
+    .layout{
+        max-width:750px;
+    }
+    .btn-Schedule{
+        margin-right: 15px;
+    }
+    .bannerText h1{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    #nav-toggle {
+        position: absolute;
+        left: 10px;
+        top: 22px;
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+    }
+    #nav-toggle span,
+    #nav-toggle span:before,
+    #nav-toggle span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 2px;
+        width: 25px;
+        background: #ffffff;
+        position: absolute;
+        display: block;
+        content: "";
+        transition: all 300ms ease-in-out;
+    }
+    #nav-toggle span:before {
+        top: -8px;
+    }
+    #nav-toggle span:after {
+        bottom: -8px;
+    }
+    #nav-toggle.active span {
+        background-color: transparent;
+    }
+    #nav-toggle.active span:before,
+    #nav-toggle.active span:after {
+        top: 0;
+    }
+    #nav-toggle.active span:before {
+        transform: rotate(45deg);
+    }
+    #nav-toggle.active span:after {
+        transform: rotate(-45deg);
+    }
+    header .navigation{
+        padding: 0px;
+    }
+    header .navigation ul {
+        width: 220px;
+        float: right;
+        margin: 0;
+        position: absolute;
+        right: 15px;
+        top: 60px;
+        background: rgba(0,0,0,.6);
+        padding: 10px 15px;
+        display: none;
+    }
+    header .navigation ul:after{
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: 5px;
+        height: 5px;
+        border-bottom: 8px solid rgba(0,0,0,.6);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    header .navigation ul li{
+        width: 100%;
+        float: left;
+        padding: 5px 0px;
+    }
+
+    section.spPropertyDetails .col-3{
+        width: 100%;
+    }
+    section.spPropertyDetails .propertyContent .propertyRight{
+        margin: 0px;
+    }
+    section.spPropertyDetails .col-9{
+        width: 100%;
+        padding: 0 0 20px;
+        margin: 0;
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+    }
+    section.spPropertyDetails .propertySummary{
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    section.spPropertyDetails .propertySummary .groupPropertyDetailsRight .ctaContainer{
+        top: 20px;
+        right: 0;
+    }
+    section.spPropertyDetails .propertySummary .propertyPrice{
+        font-size: 22px;
+    }
+    section.spPropertyDetails .propertyContent{
+        padding: 0px 0px 20px;
+    }
+    section.spPropertyDetails .propertyTop h2{
+        font-size: 30px;
+        line-height: 40px;
+        width: 100%;
+    }
+    section.spPropertyDetails .propertyTop p{
+        font-size: 16px;
+    }
+    section.spPropertyDetails .propertyContent .propertyPrice{
+        font-size: 24px;
+    }
+    section.spPropertyDetails .propertyContent .groupPropertyDetailsRight{
+        min-height: auto;
+    }
+    .directionRow h3{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .directionRow form{
+        max-width: 100%;
+    }
+    .propertyAgent .agentInfo p a{
+        line-height: 18px;
+    }
+    .scrollNext{
+        bottom: 110px;
+    }
+    /*--- Top Footer ---*/
+    .ftTopBar{
+        text-align: center;
+        line-height: 24px;
+    }
+    .userFullLinks a{
+        line-height: 24px;
+    }
+    .copyRight, .userFullLinks, .providerRight{
+        width: 100%;
+        text-align: center;
+    }
+    .providerRight{
+        margin-top: 10px;
+    }
+    section.spPropertyDetails .propertyTop .property_title {
+        width: 100%;
+    }
+}
+@media (max-width:766px) {
+    .layout{
+        max-width:590px;
+    }
+    .bannerText h1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    section.spPropertyDetails .propertyTop{
+        padding: 15px 0px;
+    }
+    section.spPropertyDetails .propertyTop h2 {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+    section.spPropertyDetails .propertyContent .propertyPrice{
+        font-size: 20px;
+    }
+    section.spPropertyDetails .propertyContent .groupPropertyDetailsRight{
+        padding: 15px;
+    }
+    section.spPropertyDetails .propertyContent h3{
+        padding: 10px 0px 0px;
+    }
+
+    /* Section Property Listing Page */
+    .spPropertyListingRow .spPropertyList{
+        margin: 0px 0px 15px;
+        padding: 0px 0px 0px;
+    }
+    .spPropertyListingRow .spPropertyList .spPropertyImg{
+        min-height: 200px;
+    }
+    .spPropertyListingRow .spPropertyList .spPropertySortDesc{
+        padding: 15px 0px;
+    }
+    .spPropertyListingRow .spPropertyList .spPropertySortDesc a{
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0px;
+    }
+    .spPropertyListingRow .spPropertyList .spPropertySortDesc p{
+        font-size: 14px;
+    }
+    .spPropertyListingRow .spPropertyList .spPropertySortDesc .spPropertyKeys span{
+        font-size: 14px;
+    }
+    .spPropertyListingRow .spPropertyList .spPropertySortDesc .spPropertyKeys span.propertyPrice{
+        font-size: 16px;
+    }
+    .scrollNext{
+        bottom: 80px;
+    }
+    .slider-title{
+        display: none;
+    }
+    .amenitiesContainer ul li{
+        width: 100%;
+    }
+    .formCol6 {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (max-width:599px) {
+    .layout{
+        max-width:470px;
+    }
+    .bannerText h1 {
+        font-size: 28px;
+        line-height: 38px;
+        padding: 0px 0px 10px;
+    }
+    .line-separator:after, .line-separator:before{
+        width: 15%;
+    }
+    .line-separator:after{
+        width: 20%;
+        bottom: -5px;
+    }
+    section.spPropertyDetails .propertyTop h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    section.spPropertyDetails .propertyTop p {
+        font-size: 14px;
+        margin: 0px;
+    }
+    section.spPropertyDetails .propertyContent .propertyPrice{
+        font-size: 16px;
+    }
+    section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .propertyDetailsRow{
+        margin: 0px 0px 0;
+    }
+    section.spPropertyDetails .propertyContent .groupPropertyDetailsRight .propertyDetailsRow .fieldLeft{
+        font-size: 15px;
+        line-height: 18px;
+        width: 100%;
+        margin: 0px 0px 5px;
+    }
+    section.spPropertyDetails .propertyContent .propertyPresented h3{
+        font-size: 14px;
+    }
+    .propertyAgent .agentInfo h5{
+        font-size: 14px;
+    }
+    section.spPropertyDetails .propertyContent p{
+        font-size: 14px;
+    }
+    .getInTouch h5{
+        font-size: 14px;
+    }
+    .getInTouch form{
+        padding: 15px;
+    }
+    .map iframe, #map_canvas{
+        height: 280px;
+    }
+    .single-property-corner-tag {
+        right: 0;
+        top: 110px;
+        transform: rotate(00deg);
+        width: 120px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+}
+@media (max-width:479px) {
+    .layout{
+        max-width:350px;
+    }
+    .btn-Schedule{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    header .logo{
+        width: 50%
+    }
+    header .logo img {
+        width: auto;
+        max-height: 60px;
+    }
+    header .navigation ul li a{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .directionRow form input[type="text"]{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .map iframe, #map_canvas{
+        height: 150px;
+    }
+    .amenitiesTags ul li a{
+        padding: 5px 10px;
+    }
+    .swiftCloudThemeChatConversion {
+        width: 90%;
+    }
+    .sp_agent_email_mobile{
+        display: block;
+    }
+    .sp_agent_email{
+        display: none;
+    }
+}
